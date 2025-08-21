@@ -7,6 +7,10 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
 // https://vite.dev/config/
 export default defineConfig({
+  server:{
+    port:9090,
+    open:true
+  },
   plugins: [vue()],
   resolve: {
     alias: {
